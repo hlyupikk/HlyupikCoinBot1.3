@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#click-button {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    margin: 20px auto;
+    cursor: pointer;
+    display: block;
+    z-index: 10;
+    position: relative;
+}
+
+.shop-item {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-item img {
+    width: 40px; /* Уменьшили размер изображений */
+    height: 40px; /* Уменьшили размер изображений */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.shop-item:hover {
+    background-color: #d1d1d1;
+}
+
+/* Добавляем медиазапросы для лучшей адаптации под мобильные устройства */
+@media (max-width: 600px) {
+    #app {
+        width: 100%;
+        max-width: none;
+    }
+
+    #click-button {
+        width: 80px;
+        height: 80px;
+    }
+
+    .shop-item img {
+        width: 35px; /* Еще меньше для маленьких экранов */
+        height: 35px; /* Еще меньше для маленьких экранов */
+    }
+}
